@@ -2,7 +2,7 @@
 
 :root {
     --color0: #F2E3D5;
-    --color1: #3CA6A6;
+    --color1: 60, 166, 166;
     --color2: #026773;
     --color3: #024959;
     --color4: #012E40;
@@ -84,4 +84,46 @@ main h2 {
     font-size: 1.4em;
     font-weight: normal;
     text-align: center;
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color4);
+    background-color: rgba(var(--color1), .75);
+    padding: 1px 2px;
+    border-radius: 1px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--color4);
+}
+
+main figure {
+    /* display: flex; */
+    text-align: center;
+}
+
+main figure img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.12);
+}
+
+main figure figcaption {
+    font-style: italic;
+    margin-top: 10px;
 }
