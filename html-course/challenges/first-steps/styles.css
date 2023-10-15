@@ -99,6 +99,24 @@ main strong {
     font-weight: bold;
 }
 
+main ul {
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main li {
+    position: relative;
+    padding-left: 50px;
+    list-style-position: inside;
+    /* list-style: none; */
+    list-style-type: '📌\00A0';
+}
+
+main .normal-list li {
+    list-style: square;
+    list-style-position: inside;
+}
+
 main a {
     text-decoration: none;
     font-weight: bold;
@@ -111,6 +129,10 @@ main a {
 main a:hover {
     text-decoration: underline;
     color: var(--color4);
+}
+
+main .special-link {
+    background-color: white;
 }
 
 main figure {
@@ -131,4 +153,40 @@ main figure img {
 main figure figcaption {
     font-style: italic;
     margin-top: 10px;
+}
+
+main .code {
+    display: flex;
+    margin-left: 40px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+main .code pre {
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    white-space: pre-wrap; /* To maintain line breaks */
+    font-family: 'Courier New', monospace;
+}
+
+main span {
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    padding: 7px 0px;
+    background-color: var(--color4);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--color0);
 }
